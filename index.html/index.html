@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebecca Ferreira - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="showSection('inicio')"><i class="fas fa-home"></i> Início</button>
+            <button onclick="showSection('formacao')"><i class="fas fa-graduation-cap"></i> Formação</button>
+            <button onclick="showSection('projetos')"><i class="fas fa-project-diagram"></i> Projetos</button>
+            <button onclick="showSection('contato')"><i class="fas fa-envelope"></i> Contato</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="box">
+                <h1><i class="fas fa-home"></i> Rebecca Ferreira</h1>
+                <p>Transição de Carreira para TI</p>
+            </div>
+            <div class="photo">
+                <img src="./img/WhatsApp Image 2023-01-04 at 10.27.45.jpeg" alt="Foto de Rebecca Ferreira">
+            </div>
+            <div class="biography">
+                <p>Sou uma mulher preta, mãe solo de duas filhas, e minha história é uma montanha-russa de desafios e vitórias. Nasci e cresci no coração do Centro-Oeste de São Paulo, onde aprendi desde cedo que a força e a resiliência são essenciais para sobreviver.
+
+                    Minha jornada profissional começou em 2011. Em 2017 entrei para o mundo da prevenção à fraude. Nesse ambiente, fui forjada em uma fornalha de desafios, desenvolvendo habilidades únicas para resolver os problemas mais intrincados e garantir a segurança das operações. Cada desafio foi uma oportunidade de crescimento, e cada obstáculo apenas alimentou minha determinação.
+                    
+                    Mas o mundo é vasto, e minha curiosidade e sede por conhecimento nunca cessaram. Com o passar do tempo, meu interesse pela proteção de dados e segurança cibernética só cresceu. Percebi que a tecnologia não era apenas uma ferramenta, mas um caminho para uma vida melhor e mais segura.
+                    
+                    Assim, decidi dar um salto audacioso e migrar para a área de Tecnologia da Informação. Essa mudança não foi apenas uma evolução natural das minhas habilidades, mas uma busca apaixonada por uma qualidade de vida superior. Estou determinada a conquistar meu lugar neste campo competitivo, trazendo não apenas minhas habilidades técnicas, mas também minha resiliência e paixão por soluções inovadoras e seguras.
+                    
+                    Minha jornada até aqui pode ter sido desafiadora, mas cada passo me preparou para o próximo. Estou pronta para enfrentar o futuro com coragem, determinação e uma sede insaciável por excelência. O mundo da tecnologia que me aguarde, pois estou pronta para deixar minha marca.
+                    
+                    
+                    
+                    
+                    
+                    </p>
+            </div>
+        </section>
+
+        <section id="formacao" style="display:none;">
+            <div class="box">
+                <h2><i class="fas fa-graduation-cap"></i> Formação</h2>
+                <ul>
+                    <li>Ensino médio: Escola Pública Gamberini</li>
+                    <li>Graduação incompleta em Ciência de Dados na Cruzeiro do Sul</li>
+                    <li>Curso formativo de Tecnólogo em Tecnologia na Preta Lab</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projetos" style="display:none;">
+            <div class="box">
+                <h2><i class="fas fa-project-diagram"></i> Projetos</h2>
+                <ul>
+                    <li><a href="https://lojakiriku.netlify.app/" target="_blank">Minha loja de perfumes virtual</a></li>
+                    <li><a href="https://www.pretalab.com/rede/rebecca-ferreira-746" target="_blank">Perfil no site da PretaLab</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contato" style="display:none;">
+            <div class="box">
+                <h2><i class="fas fa-phone"></i> Contato</h2>
+                <p><i class="fas fa-phone"></i> WhatsApp: +55 19 4021-5360</p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank">https://www.linkedin.com/feed/</a></p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/rebecca042827ferreira" target="_blank">https://github.com/rebecca042827ferreira</a></p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('main section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
